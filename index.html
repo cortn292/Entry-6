@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jammin n' Manhattan</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Poppins', sans-serif;
+            background: #F49690;
+            padding: 20px;
+        }
+
+        header {
+            text-align: center;
+            margin-bottom: 40px;
+        }
+
+        h1 {
+            font-size: 2.5em;
+            color: #E63A37;
+            margin-bottom: 10px;
+        }
+
+        .subtitle {
+            color: #E63A37;
+            font-size: 1.1em;
+        }
+
+        .gallery {
+            column-count: 4;
+            column-gap: 20px;
+            max-width: 1400px;
+            margin: 0 auto;
+        }
+
+        .card {
+            background: #F9B5AC;
+            border-radius: 12px;
+            overflow: hidden;
+            margin-bottom: 20px;
+            break-inside: avoid;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+            transition: transform 0.2s, box-shadow 0.2s;
+        }
+
+        .card:hover {
+            transform: translateY(-4px);
+            box-shadow: 0 4px 16px rgba(0,0,0,0.15);
+        }
+
+        .card-image {
+            width: 100%;
+            display: block;
+            background: #e0e0e0;
+            min-height: 200px;
+        }
+
+        .card-content {
+            padding: 16px;
+        }
+
+        .card-title {
+            font-size: 1.1em;
+            font-weight: 600;
+            color: #E63A37;
+            margin-bottom: 8px;
+        }
+
+        .card-description {
+            color: #E63A37;
+            font-size: 0.95em;
+            line-height: 1.5;
+        }
+
+        @media (max-width: 1200px) {
+            .gallery {
+                column-count: 3;
+            }
+        }
+
+        @media (max-width: 768px) {
+            .gallery {
+                column-count: 2;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .gallery {
+                column-count: 1;
+            }
+        }
+    .back-button {
+        position: fixed;
+        top: 20px;
+        left: 20px;
+        text-decoration: none;
+        background-color: #E63A37;
+        color: #F49690;
+        padding: 10px 20px;
+        border-radius: 5px;
+        font-family: 'Poppins', sans-serif;
+        z-index: 1000;
+    }
+    .back-button:hover {
+        background-color: #E94C49;
+    }
+    </style>
+</head>
+<body>
+   <a href="https://cortn292.github.io/c1i/" class="back-button">← Back to Home</a>
+  
+    <header>
+        <h1>Part Six</h1>
+        <p class="subtitle">Over Halfway There...</p>
+    </header>
+
+    <div class="gallery">
+        <div class="card">
+            <img src="https://m.media-amazon.com/images/I/41vEFVLjLVL._UXNaN_FMjpg_QL85_.jpg" class="no-hands">
+            <div class="card-content">
+                <h3 class="card-title">Song of the Day</h3>
+                <p class="card-description">Wassup By Young Miko</p>
+            </div>
+        </div>
+
+        <div class="card">
+            <img src="https://media.discordapp.net/attachments/801582216525774921/1430276473692098560/Untitled603_20251019170420.jpg?ex=68f93044&is=68f7dec4&hm=9c9510b4c3b8719260a690cc68fd20f978e1971c7f06b7370eab529b2cc62669&=&format=webp&width=966&height=1742" alt="Hyena" class="card-image">
+            <div class="card-content">
+                <h3 class="card-title">Tattoo Pt. 2</h3>
+                <p class="card-description">The refined, digital, version. It looks really good in my opinion. </p>
+            </div>
+        </div>
+
+        <div class="card">
+            <img src="https://media.discordapp.net/attachments/801582216525774921/1430276493774160013/IMG_1430.png?ex=68f93049&is=68f7dec9&hm=83548aff37d5a9a5a3a88ba20e06a4730b378dd1e7862469b77b69abefb4daf1&=&format=webp&quality=lossless&width=688&height=700" alt="Moth" class="card-image">
+            <div class="card-content">
+                <h3 class="card-title">The Vibes</h3>
+                <p class="card-description">This genuinely feels like the energy my friends give me. Love them though.</p>
+            </div>
+        </div>
+
+        <div class="card">
+            <img src="https://media.discordapp.net/attachments/801582216525774921/1430276514888286318/IMG_1444.jpg?ex=68f9304e&is=68f7dece&hm=c3bc1b9963a7498387ed27b0d96ab39bed5255009701f46b8bd26e57b709e2cf&=&format=webp&width=300&height=600">
+            <div class="card-content">
+                <h3 class="card-title">Design Wall</h3>
+                <p class="card-description">It's Coming together.</p>
+            </div>
+        </div>
+
+        <div class="card">
+            <img src="https://media.discordapp.net/attachments/801582216525774921/1430276526884126832/1A4DF949-E89C-4CCA-ACD2-C1867F7B253C.jpg?ex=68f93051&is=68f7ded1&hm=fdbb2f6c823e1ca8d08a9f5dd583463f33b1b39d55bd202f331e5e79299b63e7&=&format=webp&width=980&height=1742" class="card-image">
+            <div class="card-content">
+                <h3 class="card-title">Meow</h3>
+                <p class="card-description">Miau</p>
+            </div>
+        </div>
+
+        <div class="card">
+            <img src="https://media.discordapp.net/attachments/801582216525774921/1430276567388524655/IMG_1442.jpg?ex=68f9305a&is=68f7deda&hm=8b12ed12265311b1104b620266759db0da6be1ea6f240f53183eedd9769d70ee&=&format=webp&width=2048&height=1536" class="card-image">
+            <div class="card-content">
+                <h3 class="card-title">Commute</h3>
+                <p class="card-description">I got out of class extremely early, at night. Why even go?</p>
+            </div>
+        </div>
+
+        <div class="card">
+            <img src="https://media.discordapp.net/attachments/801582216525774921/1430276543254368408/IMG_1450.png?ex=68f93055&is=68f7ded5&hm=066acd08c908b983035dbc8bd05af08445697141cf2b75b70ae6e78c4b015192&=&format=webp&quality=lossless&width=1672&height=1744" alt="Lake view" class="card-image">
+            <div class="card-content">
+                <h3 class="card-title">POV:</h3>
+                <p class="card-description">Midterms choking me out</p>
+            </div>
+        </div> 
+</body>
+</html>
